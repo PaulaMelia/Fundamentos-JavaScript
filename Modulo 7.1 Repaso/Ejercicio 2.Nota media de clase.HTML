@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2-M7.1- repaso</title>
+</head>
+
+<body>
+    <h2>NOTA MEDIA DE CLASE</h2>
+
+    <script>
+        let alumno1 = parseInt(prompt("Nota del alumno 1"));
+        let alumno2 = parseInt(prompt("Nota del alumno 2"));
+        let alumno3 = parseInt(prompt("Nota del alumno 3"));
+        let alumno4 = parseInt(prompt("Nota del alumno 4"));
+        let alumno5 = parseInt(prompt("Nota del alumno 5"));
+        let alumno6 = parseInt(prompt("Nota del alumno 6"));
+
+        let resultado = (alumno1+alumno2+alumno3+alumno4+alumno5+alumno6) / 3;
+        alert(resultado.toFixed(1)+" "+"es la nota media de la clase");
+        
+        if(resultado <5){alert("La nota mitjana de la classe està suspesa. Els alumnes haurien de preguntar els seus dubtes i treballar més");}
+        else if(resultado <7)  {alert("La nota mitjana de la classe és bona, però els alumnes haurien de millorar el treball personal");}
+        else if (resultado>=8) {alert("Enhorabona! La nota mitjana de la classe es correspon amb l'esforç realitzat");}
+        
+
+    </script>
+
+
+</body>
+
+</html>

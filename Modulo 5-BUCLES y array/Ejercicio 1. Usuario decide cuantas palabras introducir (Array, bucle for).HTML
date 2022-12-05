@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1-Modulo5 ARRAY Y OF</title>
+</head>
+
+<body>
+    <script>
+        //primero crea una array, para que se archiven las palabras
+        let arraypalabras = [];
+        //como no sabemos que palabras utilizara, guardaremos luego el push
+
+
+        let numpalabras = prompt("Indica cuantas palabras quieres escribir:", "Escribe numero");
+        alert(numpalabras +" "+"es el numero total de palabra");
+        let palabra
+
+        for (let i = 1; i <= numpalabras; i++){
+            palabra = prompt("Dime la palabra:" + i)
+            //ahora que sabremos las palabras, , ponemos el push para que pueda iterar
+            arraypalabras.push(palabra);
+        }
+        alert(arraypalabras);
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio extra 1 (M4)</title>
+</head>
+
+<body>
+    <!--Fes un programa que pregunti a l'usuari dos nombres enters al qual anomenaràs dividend i divisor respectivament.
+El divisor haurà d'estar incluido entre 2 i 7.
+En cas contrari, el programa haurà de mostrar un missatge d'error.
+Si el divisor és correcte (2-7) mostra en pantalla si el dividend és múltiple del divisor, o no.-->
+
+
+    <script>
+        let dividendo = parseInt(prompt("Introduce un nemero entero", "Escribe aqui"));
+        let divisor = parseInt(prompt("Introduce el segundo numero solo entre 2 y 7", "Escribe aqui"));
+
+        let multiplo = dividendo % divisor;
+
+        if (divisor < 2 || divisor > 7)
+            alert("¡ERROR!");
+        else if (multiplo == 0)
+            alert("El dividendo es multiplo del divisor");
+        else {
+            alert("EL dividendo no es multiplo del divisor");
+        }
+    </script>
+</body>
+
+</html>

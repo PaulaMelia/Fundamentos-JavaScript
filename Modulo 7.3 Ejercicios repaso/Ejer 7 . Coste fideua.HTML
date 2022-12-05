@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Mosulo7.3</title>
+</head>
+
+<body>
+    <h1> CALCULADORA FIDEUA</h1>
+    <p>Numero de personas para la fideua : <input type="texto" id="personas"/></p>
+    <p>Cuanto cuesta 1 kilo de fideos: <input type="texto" id="fideosKilo"></p>
+    <p>Cuanto cuesta 1 kilo de gamas: <input type="texto" id="gambasKilo"></p>
+    <p>Cuanto cuesta 1 kilo de calamares: <input type="text" id="calamaresKilo"></p>
+    <hr>
+    <p><button onclick="calcularFideua()">Calcular</button></p>
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+
+    <script>
+/*hemos quedado para hacer una fideua,Ingredientes : Fideos , Gambas i calamares.
+Sabemos que para CADA" 4 personas" se usaran===>
+-500 gra fideos
+-400 gr de calamares
+-200 gr de gambas
+HTML
+Hacer un programa que pida, por pantalla.
+El precio de cada ingrediente por kilo. lo pone el usuario y el numero de gente 
+que seran
+JAVA SCRIPT
+1-el programa le dira las cantidades necesarias , info del usuario
+2-El precio por persona y cantidad necesaria individual
+3-precio final de la fideua*/
+
+   function calcularFideua(){
+//1cantidades
+    let fideosKilo= parseInt(document.getElementById("fideosKilo").value);
+    let gambasKilo= parseInt(document.getElementById("gambasKilo").value);
+    let calamaresKilo=parseInt(document.getElementById("calamaresKilo").value);
+    let personas= parseInt(document.getElementById("personas").value);
+//2 precio
+    let fideosCantidad= 125 * personas;
+    let gambasCantidad= 50 *personas;
+    let calamaresCantidad= 100*personas;
+
+   let fideosPrecio= fideosKilo*(fideosCantidad/1000); //por que 1k son 1000 gr
+   let gambasPrecio=gambasKilo*(gambasCantidad/1000);
+   let calamaresPrecio=calamaresKilo*(calamaresCantidad/1000);
+
+   //console.log(fideosPrecio,gambasPrecio,calamaresPrecio);
+
+
+   //3
+   let total = fideosPrecio+ gambasPrecio+calamaresPrecio;
+   let precioPersona= total/ personas;
+
+   document.getElementById("resultado1").innerHTML= "Una fideua para "+ personas+ " personas se necesitan : <br>"+ fideosCantidad + " gr de fideos<br>"
+   +gambasCantidad+ " gr de gambas<br>" + calamaresCantidad+ " gr de calamares.";
+
+   document.getElementById("resultado2").innerHTML= "El precio por persona es de: " + precioPersona.toFixed(2) + "€";
+
+   document.getElementById("resultado3").innerHTML="El precio total de la fideua seria: " + total.toFixed(2) + "€";
+
+
+
+   }
+
+
+    </script>
+
+
+</body>
+</html>

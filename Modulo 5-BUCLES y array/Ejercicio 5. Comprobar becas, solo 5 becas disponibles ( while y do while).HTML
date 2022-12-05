@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3- M4 - becas</title>
+</head>
+
+<body>
+    <h2> BECAS ACEPTADAS:</h2>
+    <hr>
+    <p id="mostrar"></p>
+
+    <script>
+        let edad,nombre,titulo,paro,estudiante;
+        let listado="";
+        let arraybecas=[];
+
+
+
+         while (arraybecas.length<5){
+            nombre=prompt("Dime tu nombre y apellidos:","Nombre y apellido");
+            edad = parseInt(prompt("Escribe tu edad"));
+            titulo = prompt("Escribe si tines si / no titulo universitario", "si / no").toLowerCase();
+            paro = prompt("Escribe si estas en el paro si / no", "si /no").toLowerCase();
+    
+            estudiante= nombre
+
+         //hacer if,si, tus datos corresponden a lo siguiente
+         if((paro=="si") || (edad>=18 && titulo=="si")){
+            arraybecas.push(estudiante);
+            }
+        document.getElementById("mostrar").innerHTML = listado  + arraybecas.join("<br>"); //dentro del join meto el salto de html
+      
+         }
+
+     
+     
+    </script>
+
+
+
+</body>
+
+</html>

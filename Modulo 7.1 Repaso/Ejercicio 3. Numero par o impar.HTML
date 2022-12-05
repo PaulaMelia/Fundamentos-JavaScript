@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3-Modulo 7.1</title>
+</head>
+<body>
+    <!--L’usuari ha d'introduir un número i el programa ha de mostrar per pantalla si el número és parell o imparell.-->
+<H2>NUMERO PAR O IMPAR</H2>
+<p id="mostrar"></p>
+
+<script>
+
+let numero= parseInt(prompt("Introduce un numero entero:","Escribe aqui"));
+let numeroevaluado=(numero%2)
+
+if(numeroevaluado===0){document.getElementById("mostrar").innerHTML= ${numero} "es un numero par";
+}
+else{
+    document.getElementById("mostrar").innerHTML= ${numero}"es un numero impar";
+}
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Modulo7.1</title>
+</head>
+
+<body>
+    <!--Crea un programa on l’usuari introdueixi una temperatura en ºC i es mostri per pantalla la conversió en ºFahrenheit:
+Fórmula
+(32 °C × 9 / 5) + 32 = 89,6 °F
+-->
+    <h2>CONVERSOR DE Cº EN ºFAHRENHEIT</h2>
+
+    <script>
+        let temperatura = parseInt(prompt("Introduce temperatuta en ºC:", "Escribe aqui"));
+        const ºFAHRENHEIT = (temperatura * 9 / 5) + 32
+
+        if (temperatura) {
+            alert("La temperatura introducida en ºC:" + " " + ºFAHRENHEIT + " " + "ºFahrenheit");
+        }
+
+    </script>
+</body>
+
+</html>

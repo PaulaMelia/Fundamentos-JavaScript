@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2-Modulo5 ARRAY Y OF</title>
+</head>
+<body>
+    <!--El programa demana dos números enters i 
+        llavors calcula la suma dels valors compresos entre els dos números, inclosos. 
+
+Exemple: 4 i 6  = resultat = 4 + 5 + 6 = 15 --> 
+
+    <script>
+     const arraysuma=[]; // ya que la operacion no varia, le ponemos array para que nos guarde los elementos.
+     
+     //pedir 2 numeros enteros------------------------------------------------------------------------------------------------------
+     let num1=parseInt(prompt("Inserta el primer numero entero:",)); //valor por defecto
+     let num2=parseInt(prompt("Introduce el segundo numero entero:",));
+     
+     
+     //hacemos un if , para poder explicar las condiciones que tendran los elementos,los numero"compresos entre els dos números, inclosos".------
+     
+     if(num1==num2){
+       alert("No pueden ser los dos numeros iguales,cambia los numeros");
+     }
+     else if(num1<num2){
+        num1= inicio;
+        num2=fin;
+     }else {
+        num2=inicio;
+        num1=fin;
+     }
+     //Bucle for, ITINERAR for/inicio;final;incremento/;-----------------------------------------------------------------------------------------------
+     let inicio;//inicio minim
+     let fin;//fin maxim
+     //necesito 2 valores para hacer la operacion y otro el texto demo+demo+demo=//
+     let textosuma= inicio;
+     let suma= 0;
+     let i;
+
+     for(i=inicio+1 ;i<=fin; i++){
+     textosuma=+"="+i;
+     suma+=i;
+    
+    };
+    alert("La serie de la suma es:"+ textosuma+"="+suma);
+    
+
+    
+
+    </script>
+    
+</body>
+</html>

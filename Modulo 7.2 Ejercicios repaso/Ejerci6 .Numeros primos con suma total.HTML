@@ -1,0 +1,51 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 6 - Mosulo7.3</title>
+</head>
+
+<body>
+  <h2> NUMEROS PRIMOS CON SUMA </h2>
+  <p id="mostrar"></p>
+  <button onclick="suma()"> Suma numeros primos</button>
+  
+  <script>
+    
+
+    function NumPrimo(numUsuario) {
+      let primo = true
+      let i = 2
+
+      while (i < numUsuario && primo) {
+        if (numUsuario % i == 0) {
+          primo = false;
+        }
+        i++
+      }
+      return primo;
+    }
+
+    function suma() {
+      let num;
+      let esPrimo = false;
+
+      do {
+
+        num = parseInt(prompt("Escribe un numero:", "Numero ?"));
+        esPrimo = NumPrimo(num);
+      } while (!esPrimo)
+
+      document.getElementById("mostrar").innerHTML = "El numero  " + num + " es un numero primo.";
+    
+
+    }
+  </script>
+
+</body>
+
+</html>

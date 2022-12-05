@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Modulo 7.3</title>
+</head>
+<h1> <span style="color:blueviolet">CALCULADORA EDAD MEDIA </h2>
+        <hr>
+        <br>
+        <button onclick="inicio()"> Media de edad</button>
+
+        <body>
+            <script>
+                function inicio() { // el boton empezara con funcion inicio
+                    let resultado;
+
+                    let usuarios = parseInt(prompt("De que cantidad de edades quieres saber la media?",
+                        "Escribe aqui"));
+
+                    resultado = "La media de edad es: " + calculo(
+                    usuarios); // aqui llamamos a la funcion2 que es calculo
+
+                    alert(resultado);
+                }
+
+                function calculo(
+                usuarios) { // cogemos como parametro de la funcion 1  los usuarios y habrimos funcion 2 para calcular la media
+                    let edad;
+                    let sumaedad = 0;
+                    let media;
+
+                    for (let i = 1; i <= usuarios; i++) {
+
+                        do {
+
+
+
+                            edad = parseInt(prompt("Escribe edad entre 0 y 120 años: al usuario" + i, ""));
+
+
+                        } while (edad < 0 || edad > 120);
+                        sumaedad = sumaedad + edad
+
+
+
+
+                    }
+                    media = (sumaedad / usuarios).toFixed(2);
+
+                    return media; // para que vuelva a la funcion 1 y vuelva todo el ciclo 
+
+                }
+            </script>
+
+        </body>
+
+</html>

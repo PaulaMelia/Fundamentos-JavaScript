@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio extra 2-(M4) Conversor de numero a string</title>
+</head>
+
+<body>
+
+    <h1><span style=color:deeppink> CONVERTIDOR DE NUMEROS A LETRAS</span></h1>
+    <hr>
+
+    <script>
+        let num = parseInt (prompt("Escribe el numero que quieras cambiar a letra:", "del 0 al 99"));
+        let decenas = parseInt(num / 10);
+        let unidad = num - decenas * 10;
+        console.log("Decenas son: ",decenas); // 3
+        console.log("Unidades son: ",unidad);// 7
+        let numString = ""; //para num
+        let textoUnidades = ""; // para unidades
+        let textoDecenas = ""; // para decenas
+
+        if ((num == 0) || (num >= 10 && num <= 15)) { //si el numero es 0 o entre 10 o 15:
+
+            switch (num) { // casos
+                case 0:
+                    numString = "Cero";
+                    break;
+                case 10:
+                    numString = "Diez";
+                    break;
+                case 11:
+                    numString = "Once";
+                    break;
+                case 12:
+                    numString = "Doce";
+                    break;
+                case 13:
+                    numString = "Trece";
+                    break;
+                case 14:
+                    numString = "Catorce"
+                    break;
+                case 15:
+                    numString = "Quince";
+                    break;
+            }
+
+
+        }else{ //si no pertence a la condicion if anterior:
+
+            switch (decenas) { // casos para escribir las decenas
+                case 1:
+                    textoDecenas = (unidad > 0) ? "Dieci " : "diez";
+                    break;
+                case 2:
+                    textoDecenas = (unidad > 0) ? "Veinti " : "Veinte";
+                    break;
+                case 3:
+                    textoDecenas = (unidad > 0) ? "Treinta y " : "Treinta";
+                    break;
+                case 4:
+                    textoDecenas = (unidad > 0) ? "Cuarenta y " : "Cuarenta"
+                    break;
+                case 5:
+                    textoDecenas = (unidad > 0) ? "Cincuenta y " : "Cincuenta";
+                    break;
+                case 6:
+                    textoDecenas = (unidad > 0) ? "Sesenta y " : "Sesenta";
+                    break;
+                case 7:
+                    textoDecenas = (unidad > 0) ? "Setenta y " : "Setenta";
+                    break;
+                case 8:
+                    textoDecenas = (unidad > 0) ? "Ochenta y " : "Ochenta";
+                    break;
+                case 9:
+                    textoDecenas = (unidad > 0) ? "Noventa y " : "Noventa";
+                    break;
+            }
+
+            switch (unidad) { // aqui pòndremos los casos de unidad
+                case 0:
+                    textoUnidades = "";
+                    break;
+                case 1:
+                    textoUnidades  = "Uno";
+                    break;
+                case 2:
+                    textoUnidades = "Dos";
+                    break;
+                case 3:
+                    textoUnidades  = "Tres";
+                    break;
+                case 4:
+                    textoUnidades  = "Cuatro";
+                    break;
+                case 5:
+                    textoUnidades  = "Cinco";
+                    break;
+                case 6:
+                    textoUnidades  = "Seis";
+                    break;
+                case 7:
+                    textoUnidades  = "Siete";
+                    break;
+                case 8:
+                    textoUnidades  = "Ocho";
+                    break;
+                case 9:
+                    textoUnidades  = "Nueve";
+                    break;
+
+            }
+
+            numString = textoDecenas + textoUnidades;
+        }
+        
+        alert("El numero: " + num + " se escribe: " + numString);
+
+    </script>
+</body>
+
+</html>

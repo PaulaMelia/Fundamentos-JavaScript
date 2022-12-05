@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 7- Modulo 7.1</title>
+</head>
+
+<p id="mostrar"></p>
+
+<body>
+    <h2>Simbolos en cadenas</h2>
+   
+    <script>
+        let num, caracter;
+        let cadena ="";
+
+        caracter = prompt("Escribe un caracter", "/*-+%&...");
+        num = parseInt(prompt("Escribe un numero"));
+
+        for (i = 1; i<= num; i++) {
+
+            for (j = 1; j <= num; j++) {
+                cadena += caracter;
+            }
+            cadena += "<br>"
+        }
+            document.getElementById("mostrar").innerHTML = cadena;
+    </script>
+
+</body>
+
+</html>

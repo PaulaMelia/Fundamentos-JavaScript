@@ -1,0 +1,39 @@
+|
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Modulo 4</title>
+</head>
+
+<body>
+    <h2>Modifica l’exercici 1 del mòdul 3.<br> Un cop introduïdes les dades, el programa ha de mostrar el següent per
+        pantalla:</h2>
+    <p>- Si l’usuari té 18 anys o més: “Nom Cognom, ets MAJOR d’edat”</p>
+    <p>- Si l’usuari és menor de 18 anys: “Nom Cognom, ets MENOR d’edat”.</p>
+
+
+    <script>
+        let nombre = prompt("Escribe tu nombre:");
+        let apellido = prompt("Escribe tu apellido:");
+        let edad = parseInt(prompt("Escribe tu edad:"));
+        let respuesta = (nombre + " " + apellido + " " + edad);
+
+
+
+
+        if (edad <= 18) {
+            alert(nombre + " " + apellido + " " + "  menor de edad");
+        } else {
+            alert(nombre + " " + apellido + " " + " mayor de edad");
+
+
+
+        }
+    </script>
+</body>
+
+</html>

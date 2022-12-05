@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 (Modulo4)</title>
+</head>
+<!--Fer un programa que demani dos números i un operador(+,-,*,/).
+Al final, el programa ha d'imprimir per pantalla el resultat de fer 
+l’operació que contingui la variable operador.-->
+
+<body>
+    <h2>Resultado variable operador</h2>
+    
+    <script>
+        let numero1 = parseInt(prompt("Escribe el primer numero entero"));
+        let numero2 = parseInt(prompt("Escribe el segundo numero entero"));
+        let oper = (prompt(" Escribe un operador operador +-/*"));
+        //let resultado=0 , lo puso rita en su ejercicio pero cual es su funcion¿?//
+        let resultado= 0 
+        
+        switch (oper) {
+            case "+":
+                resultado = numero1 + numero2;
+                break;
+            case "-":
+                resultado = numero1 - numero2;
+                break;
+            case "*":
+                resultado = numero1 * numero2;
+                break;
+            case "/":
+                resultado = numero1 / numero2;
+                break;
+            default:
+                resultado="No es un operador valido";
+                
+            // esto es la final del switch , la ultima linea es para indicar que todo lo que no se escriba en el switch no le calculara o informara//
+        }
+
+
+        alert( "La operacion" +" "+ numero1+ oper+ numero2+" "+ "es igual a"+" "+ resultado);
+    </script>
+
+</body>
+
+</html>

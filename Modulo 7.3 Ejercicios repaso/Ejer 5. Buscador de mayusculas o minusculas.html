@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escribe aqui una palabra o frase: <input type="texto" id="texto"></p>
+    <p><button onclick="comprovar()"> Resultado </button></p>
+    <p id="resultado"></p>
+
+<script>
+ function comprovar(){
+
+let texto= document.getElementById("texto").value;
+texto=texto.replace(/ /g,"");
+texto=texto.replace(/,/g,"");
+
+if(texto===texto.toUpperCase()){
+document.getElementById("resultado").innerHTML= "Esta en mayuscilas.";
+}else if(texto===texto.toLowerCase()){
+    document.getElementById("resultado").innerHTML="Esta en minusculas";
+}else{
+    document.getElementById("resultado").innerHTML= "Esta en mayusculas y minusculas";
+
+}  
+
+}
+
+</script>
+    
+</body>
+</html>

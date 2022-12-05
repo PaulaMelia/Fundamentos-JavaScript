@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio EXTRA 2-Modulo 5</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+
+    <script>
+        // Ejemplo: para altura =5
+        //La base serà  la divisió del nombre entre 2 : (5 / 2) + 1 = 3
+       
+        let altura= parseInt(prompt("Introduce la altura que quieras que tenga la L:","altura?"));
+        let base=(altura/2)+1;
+        let columna="";
+        let pie="";
+        
+
+         
+        for(let i=1 ; i<altura ; i++){
+           columna+= "*"+ "<br>";
+        } 
+
+            for(i=1 ; i< base ; i++){
+                pie += "*"; 
+
+            }
+        
+        document.getElementById("resultado").innerHTML = columna + pie  ;
+       
+       
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body { margin: 0 auto; width:80%; font-family: 'Segoe UI', 'Open sans', Geneva, Verdana, sans-serif;}
+      #container {padding: 0.5em 2em 0.5em 2em;}
+      .pregunta {color:rgba(24, 24, 122, 0.876);}
+      .respuesta {color:rgb(161, 13, 13);}
+      .noSpace {margin:0;}
+	.spanish {color: teal; font-size:80%;}
+   </style>
+   <title>Examen FDLP</title>
+</head>
+<body>
+   <div id="container">
+      <h1>Fonaments de la Programació. Examen de JavaScript. </h1>
+      <h2>Estudiant: <mark>escriu el teu nom (escribe aquí tu nombre)</mark></h2>
+      <hr>
+	<h1>INSTRUCCIONS</h1>
+       <p>Crear un fitxer <strong>main.js</strong> i enllaçar-lo a aquest .html.<br>
+          Crear les funcions necessàries i cridar-les des dels botons, per donar solució als plantejaments següents:</strong></p>
+	<p class="spanish">Crea un archivo <strong>main.js</strong> y enlazalo a este .html.<br> 
+	   Crea las funciones necesarias y enlazalas a los botones ya creados para dar solución a las siguientes preguntas</p>
+	<hr>
+      <div class="pregunta">
+         <h3>Pregunta 1</h3>
+	   <p>Crea dos arrays anomenats <strong>array1</strong> i <strong>array2</strong>. Crea un bucle que inclogui al mateix temps (a la mateixa volta) a l'<strong>array1</strong> els números del 100 al 5 en intervals de 5, i a l'<strong>array2</strong> els múltiples de 3 de la sèrie anterior. Un cop finalitzat el bucle, ordenar els elements de l'<strong>array2</strong> de forma ascendent i mostrar-ne el contingut en els paràgrafs amb l'<strong>id</strong> equivalent del present .html.</p>	 
+         <p class="spanish">Crea dos arrays denominados <strong>array1</strong> y <strong>array2</strong>. Crea un bucle que incluya al mismo tiempo (en la misma vuelta) los números del 100 al 5 en intervalos de 5 en el <strong>array1</strong> y los múltiplos de 3 de la sèrie anterior en el<strong>array2</strong>  Una vez finalizado el bucle, ordenar los elements del <strong>array2</strong> de forma ascendente i mostrar el contenido en los párrafos con el <strong>id</strong> equivalente en el present .html.</p>
+         <p>La sortida haurà de ser la següent:</p>
+         <p class="spanish">La salida ha de ser la siguiente:</p>
+            <ul>
+               <li>Array1: 100,95,90,85,80,75,70,65,60,55,50,45,40,35,30,25,20,15,10,5</li>
+               <li>Array2: 15,30,45,60,75,90</li>
+            </ul>
+      </div>
+      <div class="respuesta">
+         <h3>Solució pregunta 1</h3>
+         <p><button>Resultat bucle</button></p>
+         <ol>
+            <li>Sèrie de 100 a 5 de 5 en 5. Array1: <span id="array1"> </span></li>
+            <li>Múltiples de 3 a l'array 1. Array2: <span id="array2"> </span></li>
+         </ol>
+      </div>
+	<hr>  
+      <div class="pregunta">
+         <p>Adjunt trobaràs el fitxer <strong>dades.js</strong>, el qual conté un array d'objectes anomenat <strong>mascotas</strong>.
+	  <br>
+         Realitza les operacions següents mitjançant funcions (punts b, c i e) enllaçant-la als botons pertinents:</p>
+	  <p class="spanish">Adjunto encontrarás el archivo <strong>dades.js</strong>, el cual cuenta un array de objetos denominado <strong>mascotas</strong>.
+	  <br>
+         Realiza las operaciones siguientes mediante funciones (puntos b, c i e) enlazándolas a los botones pertinentes:</p>
+         <h3>Pregunta 2</h3>
+         <ol style="list-style-type:lower-alpha;">
+            <li>Enllaça el fitxer a aquest .html <br><span class="spanish">Enlaza el fichero a este .html</span></li> <!-- a -->
+			
+            <li>Busca els dades del gat <strong>'Bombay'</strong> guardant el resultat de la cerca en un objecte anomenat <strong>puppy</strong>. <br>Imprimiu l'objecte <strong>puppy</strong> a la consola en forma de taula.<br> 
+		<span class="spanish">Busca los datos del gato <strong>'Bombay'</strong> guardando el resultado de la búsqueda en un objecte al cual llamarás <strong>puppy</strong>. <br>Imprime el objecto <strong>puppy</strong> en la consola en forma de tabla.</span></li> <!-- b -->
+
+            <li>Extreu en un array anomenat <strong>gossos</strong>, <em>les races</em> de gossos de pèl curt. Mostra el nou array amb un alert.<br><span class="spanish">Extrae en un array denominado <strong>gossos</strong>, <em>las razas</em> de perros de pelo corto. Muestra el nuevo array con un alert.</span></li> <!-- c -->
+			
+            <li>Expressa l'objecte <strong>puppy</strong> en forma de classe (Puppy), afegint a més, l'atribut <strong>tipoMascota</strong>.<br>
+            Guarda aquesta classe en un fitxer independent i enllaça'l al .html.<br>
+		<span class="spanish">Expresa el objecte <strong>puppy</strong> en forma de classe (Puppy), agregando además, el atribut <strong>tipoMascota</strong>. 
+            <br>Guarda esta clase en un archivo independente y enlazalo al .html.</span></li> <!-- d -->			
+			
+            <li>Crea un objecte nou amb una nova raça de gat o gos, fent servir la classe Puppy.<br> 
+            Mostra els dades de la nova mascota(<strong>toString()</strong>).<br>
+		<span class="spanish">Crea un objecte nou amb una nova raça de gat o gos, fent servir la classe Puppy.<br> 
+            Mostra els dades de la nova mascota(<strong>toString()</strong>).</span>
+		</li>
+         </ol>
+      </div>
+      <div class="respuesta">
+         <h3>Solución pregunta 2</h3>
+         <p><button onclick='p2b()'>2b. Gat Bombay (veure consola)</button></p>
+         <p><button onclick='p2c()'>2c. Races de gossos de pèl curt </button></p>
+         <p><button onclick='p2e()'>2e. Mascota creat mitjançant classe</button></p>
+         <div id="puppy"></div>
+      </div>
+   </div>
+</body>
+</html>

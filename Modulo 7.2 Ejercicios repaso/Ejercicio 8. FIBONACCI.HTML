@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FIBONACCI</h1>
+    <p> Escribe tu numero aqui:<input type="text" id="numero" /></p>
+        <p><button onclick="crearFibonacci()"> Calcular </button></p>
+            <p id="mostrar"></p>
+
+
+            <script>
+                function crearFibonacci() {
+
+                    let numero = parseInt(document.getElementById("numero").value);
+                    let a = 0;
+                    let b = 1;
+                    const lista = [0, 1]
+                    contar = 2
+
+                    while (contar < numero) {
+                        let valor = a + b;
+                        a = b;
+                        b = valor;
+                        lista.push(valor);
+                        contar++;
+                        console.log(lista);
+                    }
+                    document.getElementById("mostrar").innerHTML = lista.join(",");
+
+                }
+            </script>
+
+</body>
+
+</html>

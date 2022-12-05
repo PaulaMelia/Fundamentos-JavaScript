@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Modulo 7.3</title>
+</head>
+
+<body>
+    <h1><span style="color:rgba(152, 190, 244, 0.945)"> AREA TOTAL FIGURA</h1>
+    <h3> Escoge la figura de la que quieras calcular el area :</h3>
+    <br>
+    <button onclick="Cuadrado()">Cuadrado</button>
+    <br>
+    <button onclick="Triangulo()">Triangulo</button>
+    <br>
+    <button onclick="Rectangulo()">Rectangulo</button>
+    <br>
+    <button onclick="Circulo()">Circulo</button>
+    <hr>
+    <p id="mostrar"></p>
+
+    <script>
+        let altura = parseInt(prompt("Escribe la altura de tu figura :", "Altura ?"));
+        let ancho = parseInt(prompt("Escribe el ancho de tu figura :", "Ancho ?"));
+        let areaCuadrado = altura * ancho;
+        let areaTriangulo =(altura *ancho)/2;
+        let areaCirculo= PI*(altura*ancho);
+        const PI = 3.141592;
+
+        function Cuadrado() {
+
+            document.getElementById("mostrar").innerHTML = "El area de triangulo es : " + areaCuadrado;
+        }
+
+        function Triangulo() {
+
+            document.getElementById("mostrar").innerHTML = "El area de triangulo es :" + areaTriangulo;
+        }
+
+        function Rectangulo() {
+            document.getElementById("mostrar").innerHTML = "El area de rectangulo es :" + areaCuadrado;
+
+        }
+
+        function Circulo() {
+            document.getElementById("mostrar").innerHTML = "El area de circulo es :" + areaCirculo;
+        }
+    </script>
+
+
+
+</body>
+
+</html>

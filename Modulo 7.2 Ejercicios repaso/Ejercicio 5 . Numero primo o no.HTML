@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5- Modulo 7.2</title>
+</head>
+
+
+
+<body>
+   <h2> NUMEROS PRIMOS </h2>
+   <p id="mostrar"></p>
+   <p id="parrafo"></p>
+   <br>
+   <br>
+   <button onclick="Ejecutar()"> Numero primo o no</button>
+    <script>
+     
+     //repasar no imprime
+     function ejecutar(){
+
+
+     let numUsuario=parseInt(document.getElementById("numInput").value);
+     let primo= true;
+     let i=2; 
+     /*inicio empieza en 2 por que:Recordemos que un número primo
+      es aquel numero que cuenta con tan solo dos divisores, 
+      ellos son, a su vez, el número 1 y el mismo número.*/
+
+
+      while(i< numUsuario && primo==true){
+        if(numUsuario % i == 0) {
+            primo=false;
+        };
+        i++;
+    };
+        let parrafo= document.getElementById("mostrar");
+    parrafo.innerHTML= (!primo ||numUsuario <=1)? '${numUsuario} No es un numero primo': '${numUsuario} Es un numero primo';
+       
+
+      };
+      
+     
+
+    </script>
+    
+</body>
+</html>

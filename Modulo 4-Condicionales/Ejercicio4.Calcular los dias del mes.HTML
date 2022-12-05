@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 del Modulo 4 Switch</title>
+</head>
+
+<body>
+    <!-- //Usuario introduce un mes por pantalla i mediante el switch- con los 12 meses del año-
+    EL PROGRAMA LE CALCULA LOS DIAS QUE TIENE CADA MES. EJ:
+    Si el numero introducido por el usuario es 1,
+    le saldra en pantalla "El mes de enero tiene 31dias"//-->
+
+    <p> DIAS TOTALES DE LOS 12 MESES</p>
+    <p id="numero"></p>
+
+    <script>
+        let numero =parseInt(prompt("De que mes quieres saber los dias?"));
+        console.log(typeof(numero));
+
+        switch (numero) {
+            case 1:
+                alert("El mes de enero tiene 31 dias ");
+                break;
+            case 2:
+                alert("El mes de febrero tiene 29 dias");
+                break;
+            case 3:
+                alert("El mes de marzo tiene 31 dias");
+                break;
+            case 4:
+                alert("El mes de abril tiene 30 dias");
+                break;
+            case 5:
+                alert("El mes de mayo tiene 31 dias");
+                break;
+            case 6:
+                alert("El mes de junio tiene 30 dias");
+                break;
+            case 7:
+                alert("El mes de julio tiene 31 dias");
+                break;
+            case 8:
+                alert("El mes de agosto tiene 31 dias");
+                break;
+            case 9:
+                alert("El mes de septiembre tiene 30 dias");
+                break;
+            case 10:
+                alert("El mes de octubre tiene tiene 31 dias");
+                break;
+            case 11:
+                alert("El mes de noviembre tiene 30 dias")
+                break;
+            case 12:
+                alert("El mes de diciembre tiene 31 dias");
+                break;
+            default:
+                alert("no es un mes valido")
+                break;
+
+        }
+    </script>
+
+</body>
+
+</html>

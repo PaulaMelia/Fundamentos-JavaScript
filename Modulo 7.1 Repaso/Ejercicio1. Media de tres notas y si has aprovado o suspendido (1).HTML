@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de evaluacion</title>
+</head>
+
+<body>
+    <h2>PROGRAMA DE EVALUACION ACADEMICA</h2>
+  
+    <script>
+        let numero1 = parseInt(prompt("escribe tu nota 1"));
+        let numero2 = parseInt(prompt("escribe tu nota 2"));
+        let numero3 = parseInt(prompt("escribe tu nota 3"));
+        let resultado= (numero1+numero2+numero3) /3;
+
+        alert(resultado.toFixed(1)+" "+"es tu nota media");
+        
+        if(resultado <5){alert("“No has superat el curs. Has de recuperar");}
+        else if(resultado=5)  {alert("Enhorabona! Has aprovat però hauries de seguir practicant");}
+        else if (resultado=6) {alert("Enhorabona! Has aprovat però hauries de seguir practicant");}
+        else if (resultado=7) {alert("Enhorabona! Has aprovat però hauries de seguir practicant");}
+        else if(resultado >7) {alert("Enhorabona! Has superat el curs! Passa ja al següent nivell");}
+        
+    </script>
+
+</body>
+
+</html>

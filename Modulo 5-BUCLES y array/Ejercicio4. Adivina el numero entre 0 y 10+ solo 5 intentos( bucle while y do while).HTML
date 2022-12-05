@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4-Modulo 5-Bucles Do while y while</title>
+</head>
+<body>
+<h2>ADIVINA EL NUMERO DE LA MAQUINA DEL 0 AL 10</h2>
+<hr>
+
+<script>
+let random= Math.ceil((Math.random() * 10));
+let num=0;
+let intentos=0; // 
+
+// instrucciones, reglas
+do{ 
+  num= parseInt(prompt("Escribe un numero del 0 al 10","Cuidado,solo tienes 5 intentos"));
+  intentos++;
+  //mientras que
+} while ((num != random)  && (intentos<5)); 
+  
+//avisamos que solo seran validos 5 intentos
+
+if (num==random  &&  intentos<5 ) {
+    alert("Enhorabona, el número és" + " "+ random +" "+ "i has necesitado"+intentos)
+
+} else { alert("Has utilitzat massa intents! El número és" +" "+ random);
+
+}
+
+</script>
+</body>
+
+</html>

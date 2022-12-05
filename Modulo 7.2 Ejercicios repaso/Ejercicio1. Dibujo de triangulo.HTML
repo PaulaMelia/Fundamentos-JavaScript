@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 repaso-Modulo7.2</title>
+</head>
+
+<body>
+    
+    <p id="usuario"></p>
+
+<script>
+
+  const usuario = parseInt(prompt("Escribe un numero,para mostrar la cantidad de lineas","1,2,3,4..."));
+  
+  
+  for (let i = 1; i<=usuario; i++) {
+    for (let j = 1; j <=i; j++) {  //j<= i para que haga el dibujo
+
+    document.getElementById("usuario").innerHTML +="*";
+}
+ 
+document.getElementById("usuario").innerHTML += "<br>";
+}
+
+</script>
+    
+</body>
+</html>

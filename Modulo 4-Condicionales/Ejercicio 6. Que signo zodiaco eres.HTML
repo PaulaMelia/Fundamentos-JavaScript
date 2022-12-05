@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 (M4) Signos</title>
+</head>
+
+<body>
+    <!--Fer un programa que demani a l’usuari quin dia i quin mes va néixer, 
+        amb aquesta informació el programa mostra per pantalla, de quin signe del zodíac és.
+    Àries-Aries (21.03 — 19.04)
+    Taure-Tauro (20.04 — 20.05)
+    Bessons-Géminis (21.05 — 20.06)
+    Cranc-Cáncer (21.06 — 22.07)
+    LLeó-Leo (23.07 — 22.08)
+    Verge-Virgo (23.08 — 22.09)
+    Balança-Libra (23.09 — 22.10)
+    Escorpi-Escorpio (23.10 — 21.11)
+    Sagitario-Sagitario (22.11 — 21.12)
+    ---------------------------------------
+    Capricorn-Capricornio (22.12 — 19.01)
+    Aquari-Acuario (20.01 — 18.02)
+    Peixos-Piscis (19.02 — 20.03)-->
+    <h2>TU SIGNO DEL ZODIACO</h2>
+    <hr>
+    <p> Indica tu dia y mes de nacimiento para saber a que signo perteneces</p>
+
+    <script>
+
+        let dia,mes,signo
+        dia = parseInt(prompt("Que dia naciste?"));
+        mes = parseInt(prompt(" Que mes naciste? del 1 al 12"));
+        
+
+        
+        switch(mes){
+        case 1: signo=(dia<=20) ? " Aquario ": "Capricornio";
+        break;
+        case 2: signo=(dia<=19) ? "Piscis" : "Aquario";
+        break;
+        case 3: signo=(dia<=21)? "Piscis":"Aries";       
+        break;
+        case 4: signo=(dia<=20) ?"Aries":"Tauro";
+        break;
+        case 5: signo=(dia<=21) ? "Tauro":"Geminis";
+        break;
+        case 6: signo=(dia<=21) ? "Geminis" : "Cancer";
+        break;
+        case 7: signo=(dia<=23) ? "Cancer":"Leo";
+        break;
+        case 8: signo=(dia<=23) ? "Leo":"Virgo";
+        break;
+        case 9: signo=(dia<=23) ? "Virgo":"Libra";
+        break;
+        case 10: signo=(dia<=23) ?"Libra": "Escorpio";
+        break;
+        case 11: signo=(dia<=22) ?"Escorpio": "Sagitario";
+        break;
+        case 12: signo=(dia<=22) ? "Sagitario" :"Capricornio";
+        break;
+        default: signo="no pertenece a ningun signo"
+
+        }
+         
+        alert(" Tu signo del zodiaco es"+" "+signo);
+         
+    </script>
+
+
+</body>
+
+</html>

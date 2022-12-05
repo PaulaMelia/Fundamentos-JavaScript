@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3-Modulo 5-Bucles Do while y while</title>
+</head>
+<body>
+<h2>ADIVINA EL NUMERO DE LA MAQUINA DEL 0 AL 10</h2>
+<hr>
+
+<script>
+let random= Math.ceil((Math.random() * 10))
+let num=0;
+
+
+
+do{ 
+  num= parseInt(prompt("Escribe un numero"));
+
+
+} while (random != num);// para salir del bucle y detectar si hemos acertado
+  
+if( random==num){
+    alert("Felicidades! has acertado el numero");
+} 
+    
+
+
+
+    
+ 
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> STRING AL REVES</h1>
+   <p>Escribe aqui una palabra :<input type="texto" id= "frase"></p>
+   <hr>
+   <p><button onclick="invertirString()"> Invierte el texto </button></p>
+   <p id="respuesta"></p>
+    <script>
+/*En aquest programa l’usuari ha d’introduir un string,i
+ utilitzant un bucle for, el programa ha de mostrar l’string al revés*/
+
+ function invertirString(){
+    let texto= document.getElementById("frase").value;
+    let resultado=""; //vacia
+    let i=0;
+    resultado.toLowerCase();
+
+    for(i=texto.length -1  ; i>=0; i--){
+        //console.log(i,texto[i]);
+        resultado=resultado+texto[i];
+    }
+    
+    document.getElementById("respuesta").innerHTML= "Tu palabra invertida seria: " + resultado ;
+
+ }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

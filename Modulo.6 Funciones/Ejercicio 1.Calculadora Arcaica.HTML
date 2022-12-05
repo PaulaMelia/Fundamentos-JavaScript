@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Modulo 6 FUNCIONES</title>
+</head>
+<body>
+    <h1> <span style="color:rgb(234, 50, 222)">CALCULADORA ARCAICA</span></h1>
+    <hr>
+    <button onclick="suma (num1,num2)">Funcion Suma</button>
+    <br>
+    <button onclick="resta (num1,num2)">Funcion Resta</button>
+    <br>
+    <button onclick="division (num1,num2)">Funcion Division</button>
+    <br>
+    <button onclick="multiplicacion (num1,num2)">Funcion Multiplicacion</button>
+    <br>
+    <br>
+    <br>
+    <img src="Calculadora.png" width="200" />
+
+    <script>
+      
+      let num1= Number(prompt("Indica el primer numero de la operacion:","Escribe aqui"));
+      let num2= Number(prompt("Indica el segundo nuemero de la operacio:","Escribe aqui"));
+      alert("Escoge una operacion:")
+/////////////////////////////////////////////////////////////////////////////////////
+
+      function suma(num1,num2){
+      alert("La suma es: "+(num1+num2));
+    }
+
+    function resta(num1,num2){
+      alert("La resta es: "+(num1-num2));
+    }
+
+    function division(num1,num2){
+      alert("La dicision es: "+(num1/num2));
+    }
+
+    function multiplicacion(num1,num2){
+      alert("La multiplicacion es: "+(num1*num2));
+    }
+/////////////////////////////////////////////////////////////////////// esto lo ariamos si preguntaramos que operador quiere
+    /*if(operacion =="suma"){
+        suma(num1,num2)
+    }else if (operacion =="resta"){
+        resta(num1,num2);
+
+        }else if(operacion =="division"){
+        divide(num1,num2);
+
+        }else if( operacion=="multiplicacion"){
+
+            multiplica(num1,num2);
+        }else{
+            alert("Lo siento, la operacion que quieres realizar no esta en la calculadora")
+        }
+*/
+     
+    </script>
+    
+</body>
+</html>

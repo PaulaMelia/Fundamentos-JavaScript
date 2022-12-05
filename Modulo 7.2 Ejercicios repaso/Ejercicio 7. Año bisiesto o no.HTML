@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Modulo 7.2</title>
+</head>
+<body>
+
+    <h1>AÑO BISIESTO</h1>
+<p> <span style="color:rgb(144, 61, 222)"> DESCIBRE SI EL AÑO ES BISIESTO O NO</p>
+<hr>
+<p id="respuesta"></p>
+
+<script>
+ let a= parseInt(prompt("Que año quieres comprobar", "Escribe el año"));
+ let mensaje="";
+
+ if(a%400!=0){
+   mensaje= ((a%4==0) && (a% 100!=0)) ? "Año"+a+"es un traspaso": "Año"+" "+ +a+ " "+ "no es bisiesto";
+ }else{
+   mensaje= "Año" + a+" "+ "es año bisiesto";
+
+ }
+ document.getElementById("respuesta").innerHTML= mensaje;
+
+ 
+
+
+
+</script>
+    
+</body>
+</html>

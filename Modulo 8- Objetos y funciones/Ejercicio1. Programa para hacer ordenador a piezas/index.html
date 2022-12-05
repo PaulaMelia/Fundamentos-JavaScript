@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBAR ORDENADOR</title>
+</head>
+<body>
+    <h1>MONTA TU ORDENADOR A PIEZAS</h1>
+    <hr>
+    <button onclick="crearOrdenadores()"> Crear un ordenador </button>
+
+    <h3>Ordenador 1</h3>
+    <button onclick="mostrar(ordenadores[0],'todo')">Ver todas las caracteristicas</button>
+    <br>
+    <button onclick="mostrar(ordenadores[0],'marca')"> Ver Marca</button>
+    <button onclick="mostrar(ordenadores[0],'procesador')"> Ver procesador</button>
+    <button onclick="mostrar(ordenadores[0],'ram')"> Ver RAM</button>
+    <button onclick="mostrar(ordenadores[0],'disco')"> Ver Almacenamiento Disco</button>
+    <br><br>
+    <button onclick="cambiarProcesador(ordenadores[0])"> Cambiar procesador</button>
+    <button onclick="cambiarRam(ordenadores[0])"> Cambiar RAM</button>
+    <button onclick="cambiarDisco(ordenadores[0])"> Cambiar Almecenamiento Disco</button>
+    <br><br>
+    <button onclick="ejecutarOrdenador(ordenadores[0],'Discord')">Ejecutar programa</button>
+
+
+
+    <h3>Ordenador 2</h3>
+    <button onclick="mostrar(ordenadores[1],'todo')">Ver todas las caracteristicas</button>
+    <br>
+    <button onclick="mostrar(ordenadores[1],'marca')"> Ver Marca</button>
+    <button onclick="mostrar(ordenadores[1],'procesador')"> Ver procesador</button>
+    <button onclick="mostrar(ordenadores[1],'ram')"> Ver RAM</button>
+    <button onclick="mostrar(ordenadores[1],'disco')"> Ver Almacenamiento Disco</button>
+    <br><br>
+    <button onclick="cambiarProcesador(ordenadores[1])"> Cambiar procesador</button>
+    <button onclick="cambiarRam(ordenadores[1])"> Cambiar RAM</button>
+    <button onclick="cambiarDisco(ordenadores[1])"> Cambiar Almecenamiento Disco</button>
+    <br><br>
+    <button onclick="ejecutarOrdenador(ordenadores[1],'Spotify')">Ejecutar programa</button>
+
+
+
+    <script src="./ordinador.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+
+</html>

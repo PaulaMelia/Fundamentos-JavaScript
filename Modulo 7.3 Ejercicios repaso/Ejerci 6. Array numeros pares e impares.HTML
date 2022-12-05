@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Modulo 7.3 </title>
+</head>
+<body>
+   <p> Numeros pares e impares</p>
+   <br>
+   <button onclick="ejecutar()"> Suma pares o impares</button>
+   <br>
+   <p id="pares"></p>
+   <br>
+   <p id="impares"></p>
+   <p id="nro"></p>
+
+
+    <script>
+     
+     function ejecutar(){
+      
+     //array empieza en 0 siempre
+     let lista= [];
+     let numero,sumaPares,sumaImpares,valor;
+     listaNumeros = document.getElementById("nro").value.split("");
+     sumaImpares=sumaPares=0;
+    
+    
+     for( numero in lista){
+       valor= parseInt(lista[numero]);
+       if((valor%2)==0){
+        sumaPares+=valor;
+       }else{
+        sumaImpares+=valor;
+       }
+
+     } 
+     document.getElementById("pares").innerHTML= "La suma de los PARES es: "+ sumaPares;
+     document.getElementById("impares").innerHTML="La suma de los IMPARES es: "+ sumaImpares;
+     }
+
+    </script>
+    
+</body>
+</html>

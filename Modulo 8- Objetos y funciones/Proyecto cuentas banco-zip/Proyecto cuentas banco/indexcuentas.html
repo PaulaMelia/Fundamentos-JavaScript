@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cuentas</title>
+    <link href="./css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="tema"></h1>
+        <hr>
+        <p> <input type="button" style="background-color:rgb(170, 170, 232)" onclick="crearCliente()" value="Crear Cliente" />
+            <input type="button" style="background-color:rgb(170, 170, 232)"onclick="eliminarCliente()" value="Eliminar Cliente en pantalla"/> 
+            <input type="button" style="background-color:rgb(170, 170, 232)" onclick="buscarCliente()" value="Buscar Cliente"/> 
+            <input type="button" style="background-color:rgb(170, 170, 232)" onclick="crearCuenta()" value="Crear cuenta"/> 
+            <input type="button" style="background-color:rgb(166, 229, 152)"onclick="ingresarDineroCuenta()" value="Ingresar dinero en cuenta"/>
+            <input type="button" style="background-color:rgb(232, 170, 178)"onclick="retirarDineroCuenta()" value="Retirar dinero en cuenta"/>
+        </p> 
+               
+           
+                <p id="dniCliente"></p>
+                
+                
+                <p> <input type="button" onclick="retroceder()" value="Ver cliente anterior"/>
+                    <input type="button" onclick="avanzar()" value="Ver cliente siguiente"/>
+                 
+    </div>
+
+    <script src="./js/listaclientes.js"></script>
+    <script src="./js/class.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/operaciones.js"></script>
+
+
+    
+    
+
+ 
+    </script>
+
+</body>
+
+</html>

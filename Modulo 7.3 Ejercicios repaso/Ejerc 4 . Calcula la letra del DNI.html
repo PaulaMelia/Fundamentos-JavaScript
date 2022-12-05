@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4-Modulo 7.3 DNI</title>
+</head>
+<body>
+    
+
+    <script>
+        let numero = Number(prompt("Indica el numero de dni"));
+        let lletra_dni = prompt("Indica la lletra del dni").toUpperCase();
+
+        let resto = numero % 23;
+
+        let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H",
+            "L", "C", "K", "E", "T"
+        ];
+
+        letras = letras.join("");
+
+        let encontrado = letras.charAt(resto);
+
+        if (lletra_dni == encontrado) {
+            alert("El dni insertado " + numero + "con letra " + lletra_dni + " es CORRECTO");
+        } else {
+           alert("El dni insertado " + numero + "con letra " + lletra_dni + " es INCORRECTO");
+        }
+    </script>
+    
+</body>
+</html>

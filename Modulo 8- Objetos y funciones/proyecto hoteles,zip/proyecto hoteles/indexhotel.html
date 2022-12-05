@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrousel</title>
+    <link href="./css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+       
+        <p> <input type="button" style="background-color:rgb(166, 230, 166)"onclick="crearHotel()" value="Crear Hotel" />
+            <input type="button"style="background-color:rgb(170, 170, 232)" onclick="encontrarHotel()" value="Buscar Hotel" />
+            <input type="button"style="background-color:red " onclick="bajaHotel()" value="Eliminar hotel en pantalla"/>
+            <input type="button" style="background-color:rgb(222, 178, 222)"onclick="modificarHotel()" value="Modificar Hotel"/> </p> 
+            <h1 id="tema"></h1>
+
+            <p> <input type="button" onclick="retroceder()" value="Retroceder" />
+                <input type="button" onclick="avanzar()" value="Avanzar" />
+            </p>
+            
+           
+                <h1 id="nombreHotel"></h1>
+                <p id="descripcion"></p>
+                <p id="calcularMantenimiento"></p>
+                 
+    </div>
+
+    <script src="./js/classhoteles.js"></script>
+    <script src="./js/iniciaHoteles.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/crearhotel.js"></script>
+    <script src="./js/bajahotel.js"></script>
+    <script src="./js/modificar.js"></script>
+
+
+
+  
+   
+        
+    </script>
+
+</body>
+
+</html>

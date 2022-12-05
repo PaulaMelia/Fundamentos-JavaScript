@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora pinturat</title>
+</head>
+<body>
+   <h2> CALCULADORA DE PINTURA</h2>
+   <hr>
+   <label for="nombre">Nombre</label>
+   <input id="nombre" name="nombre" placeholder="Escribe tipo de pintura" />
+   <p> 1 litro de pintura es: <span style="color:blue">para 12m2 con una capa
+</p>
+<p id="alto"></p>
+<p id="ancho"></p>
+
+
+   <script>
+   let alto = parseInt(prompt("altura de la paret?:"));
+   let ancho = parseInt(prompt("anchura de la paret?:"));
+   let capas = parseInt(prompt("capas total de la paret:"));
+   
+
+   const COBERTURA= 12;
+   let area= alto*ancho;
+   //area*capas/ COBERTURA
+   
+   let resultado= area * capas / COBERTURA;
+   alert(resultado.toFixed(2)+"litros necesarios");
+   
+
+   </script>
+    
+    
+</body>
+</html>
